@@ -1553,6 +1553,7 @@ MonoBehaviour:
   gumpForce: 5
   rb: {fileID: 1450270806}
   speed: 5
+  bulet: {fileID: 201251130}
 --- !u!1 &1638971060
 GameObject:
   m_ObjectHideFlags: 0

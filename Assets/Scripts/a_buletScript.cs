@@ -32,7 +32,7 @@ public class a_buletScript : MonoBehaviour
                 transform.Translate(transform.right * speed *-1);
         }
         {
-            if (Input.GetKey(KeyCode.H))
+            if (Input.GetKeyUp(KeyCode.K))
                 impostor.position = bulet_a.position;
         }
     }

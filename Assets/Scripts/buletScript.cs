@@ -32,7 +32,7 @@ public class buletScript : MonoBehaviour
                 transform.Translate(transform.right * speed);
         }
         {
-            if (Input.GetKey(KeyCode.F))
+            if (Input.GetKeyUp(KeyCode.S))
                 rat.position = bulet.position;
         }
     }

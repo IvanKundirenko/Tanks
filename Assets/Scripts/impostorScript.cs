@@ -28,11 +28,14 @@ public class impostorScript : MonoBehaviour
         {
             rb.AddForce(transform.up * gumpForce, ForceMode2D.Impulse);
         }
-        if 
+        if (bulet)
         {
-          
-            
-        }
+        
+        
+        
+        
+        }               
+       
     }
-
+    
 }
