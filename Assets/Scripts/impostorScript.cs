@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class impostorScript : MonoBehaviour
 {
+    public GameObject destroyedEffect;
     public SpriteRenderer sr;
     public float gumpForce;
     public Rigidbody2D rb;
@@ -28,14 +29,13 @@ public class impostorScript : MonoBehaviour
         {
             rb.AddForce(transform.up * gumpForce, ForceMode2D.Impulse);
         }
-        if (bulet)
-        {
-        
-        
-        
-        
-        }               
+                     
        
     }
-    
+    private void OnCollisionEnter(Collision collision)
+    {
+        if (collision.gameObject.CompareTag("bulet"))
+            Instantiate(destroyedEffect, transform.position, Quaternion.identity);
+        Destroy(gameObject);
+    }
 }

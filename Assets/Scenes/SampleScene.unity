@@ -358,8 +358,8 @@ MonoBehaviour:
   gumpForce: 0
   speed: 2
   sr: {fileID: 201251131}
-  rat: {fileID: 201251130}
-  bulet: {fileID: 1046707454}
+  rat: {fileID: 1046707454}
+  bulet: {fileID: 201251130}
 --- !u!61 &201251133
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1549,11 +1549,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8f8b6c28745ec824f87fb67db005dc30, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  destroyedEffect: {fileID: 1450270802}
   sr: {fileID: 1450270804}
   gumpForce: 5
   rb: {fileID: 1450270806}
   speed: 5
-  bulet: {fileID: 201251130}
+  bulet: {fileID: 0}
 --- !u!1 &1638971060
 GameObject:
   m_ObjectHideFlags: 0
@@ -1919,7 +1920,7 @@ MonoBehaviour:
   bulet_a: {fileID: 1450270805}
   destination: {fileID: 0}
   gumpForce: 0
-  speed: 10
+  speed: 2
   sr: {fileID: 1890740860}
 --- !u!61 &1890740862
 BoxCollider2D:

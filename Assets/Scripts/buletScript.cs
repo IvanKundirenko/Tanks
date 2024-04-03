@@ -27,17 +27,24 @@ public class buletScript : MonoBehaviour
             if (Input.GetKey(KeyCode.A))
                 sr.flipX = true;
         }
+        if (Input.GetKey(KeyCode.S))
         {
-            if (Input.GetKey(KeyCode.S))
-                transform.Translate(transform.right * speed);
+            if (sr.flipX)
+            {
+                transform.position = transform.position + Vector3.left;
+            }
+            else
+            {
+                transform.position = transform.position + Vector3.right;
+            }
+
         }
         {
             if (Input.GetKeyUp(KeyCode.S))
-                rat.position = bulet.position;
+                bulet.position = rat.position;
+                
         }
     }
     public Transform GetDestination()
     { return destination; }
 }
-
-

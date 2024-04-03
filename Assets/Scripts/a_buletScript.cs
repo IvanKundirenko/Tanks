@@ -27,10 +27,22 @@ public class a_buletScript : MonoBehaviour
             if (Input.GetKey(KeyCode.J))
                 sr.flipX = true;
         }
+        if (Input.GetKey(KeyCode.K)) 
         {
-            if (Input.GetKey(KeyCode.K))
-                transform.Translate(transform.right * speed *-1);
+            if (sr.flipX == true)
+            {
+                transform.position = transform.position + Vector3.left;
+            }
+            else
+            {
+                transform.position = transform.position + Vector3.right;
+            }
         }
+        
+        //       {
+        //           if (Input.GetKey(KeyCode.K))
+        //               transform.Translate(transform.right * speed *-1);
+        //       }
         {
             if (Input.GetKeyUp(KeyCode.K))
                 impostor.position = bulet_a.position;
